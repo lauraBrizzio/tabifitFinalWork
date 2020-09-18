@@ -9,15 +9,16 @@
     <link href="componentes/pantallaIniciocarpeta/pantallaInicio.css"
         rel="stylesheet" Type="text/css"/>
     <link href="componentes/pantallaSeries/pantallaSeries.css"
-        rel="stylesheet" Type="text/css"/>
+        rel="stylesheet" Type="text/css/>
+
 </head>
 <body>
     <div class="contenedorPrincipal"></div>
     <!--pantallas tabifit con sus ID-->
     <tabifit-pantalla id ="pantallaInicio">
         <img src="logoPaginaInicioTabifit.png" alt="">
-
-         pantallaInicio</tabifit-pantalla>
+        <boton-con-texto>Comenzar</boton-con-texto>
+    </tabifit-pantalla>
     
 
 
@@ -35,8 +36,10 @@
     <template id="boton-con-texto">
         <link href="componentes/botonConTexto/botonContexto.css"
          rel="stylesheet" Type="text/css">
+         <button><slot></slot></button>
          
     </template>
+    <script src="componentes/botonConTexto/botonConTexto.js"></script>
 
 
     <!--fin de mis componentes-->
